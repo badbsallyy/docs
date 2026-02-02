@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puter.js Documentation - File Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .directory-tree {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+        }
+        
+        details {
+            margin: 5px 0;
+        }
+        
+        summary {
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        
+        summary:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+        
+        .directory-content {
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #dee2e6;
+        }
+        
+        .file {
+            padding: 6px 12px;
+            margin: 3px 0;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .file:hover {
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        .file-size {
+            color: #6c757d;
+            font-size: 0.9em;
+            float: right;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Puter.js Documentation</h1>
+            <p>Complete File Directory Structure</p>
+        </header>
+        
+        <div class="content">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="total-files">-</div>
+                    <div class="stat-label">Total Files</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="total-dirs">-</div>
+                    <div class="stat-label">Directories</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="total-size">-</div>
+                    <div class="stat-label">Total Size</div>
+                </div>
+            </div>
+            
+            <h2 style="margin-bottom: 15px;">📂 src/</h2>
+            <div class="directory-tree">
+<details class="directory">
+  <summary>📁 <strong>AI</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 chat.md <span class="file-size">(15.95 KB)</span></div>
+    <div class="file">📄 img2txt.md <span class="file-size">(3.21 KB)</span></div>
+    <div class="file">📄 listModelProviders.md <span class="file-size">(739 B)</span></div>
+    <div class="file">📄 listModels.md <span class="file-size">(1.57 KB)</span></div>
+    <div class="file">📄 speech2speech.md <span class="file-size">(4.11 KB)</span></div>
+    <div class="file">📄 speech2txt.md <span class="file-size">(4.46 KB)</span></div>
+    <div class="file">📄 txt2img.md <span class="file-size">(16.72 KB)</span></div>
+    <div class="file">📄 txt2speech.md <span class="file-size">(8.23 KB)</span></div>
+    <div class="file">📄 txt2vid.md <span class="file-size">(4.65 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Apps</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 create.md <span class="file-size">(3.73 KB)</span></div>
+    <div class="file">📄 delete.md <span class="file-size">(1.36 KB)</span></div>
+    <div class="file">📄 get.md <span class="file-size">(1.80 KB)</span></div>
+    <div class="file">📄 list.md <span class="file-size">(2.12 KB)</span></div>
+    <div class="file">📄 update.md <span class="file-size">(2.36 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>assets</strong></summary>
+  <div class="directory-content">
+    <details class="directory">
+      <summary>📁 <strong>css</strong></summary>
+      <div class="directory-content">
+        <div class="file">📄 bootstrap.min.css <span class="file-size">(118.42 KB)</span></div>
+        <div class="file">📄 style.css <span class="file-size">(33.67 KB)</span></div>
+      </div>
+    </details>
+    <details class="directory">
+      <summary>📁 <strong>favicon</strong></summary>
+      <div class="directory-content">
+        <div class="file">📄 android-icon-144x144.png <span class="file-size">(4.95 KB)</span></div>
+        <div class="file">📄 android-icon-192x192.png <span class="file-size">(11.13 KB)</span></div>
+        <div class="file">📄 android-icon-36x36.png <span class="file-size">(1.36 KB)</span></div>
+        <div class="file">📄 android-icon-48x48.png <span class="file-size">(1.77 KB)</span></div>
+        <div class="file">📄 android-icon-72x72.png <span class="file-size">(2.61 KB)</span></div>
+        <div class="file">📄 android-icon-96x96.png <span class="file-size">(3.32 KB)</span></div>
+        <div class="file">📄 apple-icon-114x114.png <span class="file-size">(4.07 KB)</span></div>
+        <div class="file">📄 apple-icon-120x120.png <span class="file-size">(4.31 KB)</span></div>
+        <div class="file">📄 apple-icon-144x144.png <span class="file-size">(4.95 KB)</span></div>
+        <div class="file">📄 apple-icon-152x152.png <span class="file-size">(5.26 KB)</span></div>
+        <div class="file">📄 apple-icon-180x180.png <span class="file-size">(6.31 KB)</span></div>
+        <div class="file">📄 apple-icon-57x57.png <span class="file-size">(2.02 KB)</span></div>
+        <div class="file">📄 apple-icon-60x60.png <span class="file-size">(2.10 KB)</span></div>
+        <div class="file">📄 apple-icon-72x72.png <span class="file-size">(2.61 KB)</span></div>
+        <div class="file">📄 apple-icon-76x76.png <span class="file-size">(2.65 KB)</span></div>
+        <div class="file">📄 apple-icon-precomposed.png <span class="file-size">(11.64 KB)</span></div>
+        <div class="file">📄 apple-icon.png <span class="file-size">(11.64 KB)</span></div>
+        <div class="file">📄 browserconfig.xml <span class="file-size">(281 B)</span></div>
+        <div class="file">📄 favicon-16x16.png <span class="file-size">(877 B)</span></div>
+        <div class="file">📄 favicon-32x32.png <span class="file-size">(1.26 KB)</span></div>
+        <div class="file">📄 favicon-96x96.png <span class="file-size">(3.32 KB)</span></div>
+        <div class="file">📄 favicon.ico <span class="file-size">(1.12 KB)</span></div>
+        <div class="file">📄 manifest.json <span class="file-size">(720 B)</span></div>
+        <div class="file">📄 ms-icon-144x144.png <span class="file-size">(4.95 KB)</span></div>
+        <div class="file">📄 ms-icon-150x150.png <span class="file-size">(5.21 KB)</span></div>
+        <div class="file">📄 ms-icon-310x310.png <span class="file-size">(25.48 KB)</span></div>
+        <div class="file">📄 ms-icon-70x70.png <span class="file-size">(2.43 KB)</span></div>
+      </div>
+    </details>
+    <details class="directory">
+      <summary>📁 <strong>img</strong></summary>
+      <div class="directory-content">
+        <div class="file">📄 ai.svg <span class="file-size">(602 B)</span></div>
+        <div class="file">📄 apps.svg <span class="file-size">(428 B)</span></div>
+        <div class="file">📄 attr.svg <span class="file-size">(455 B)</span></div>
+        <div class="file">📄 auth.png <span class="file-size">(447.75 KB)</span></div>
+        <div class="file">📄 auth.svg <span class="file-size">(420 B)</span></div>
+        <div class="file">📄 download.svg <span class="file-size">(329 B)</span></div>
+        <div class="file">📄 example-ai-chat.png <span class="file-size">(92.90 KB)</span></div>
+        <div class="file">📄 example-camera.png <span class="file-size">(485.20 KB)</span></div>
+        <div class="file">📄 example-notepad.png <span class="file-size">(87.87 KB)</span></div>
+        <div class="file">📄 example-stampy.png <span class="file-size">(126.38 KB)</span></div>
+        <div class="file">📄 example-summarizer.png <span class="file-size">(288.31 KB)</span></div>
+        <div class="file">📄 example-todo.png <span class="file-size">(61.63 KB)</span></div>
+        <div class="file">📄 fs.svg <span class="file-size">(302 B)</span></div>
+        <div class="file">📄 function.svg <span class="file-size">(427 B)</span></div>
+        <div class="file">📄 hosting.svg <span class="file-size">(358 B)</span></div>
+        <div class="file">📄 kv.svg <span class="file-size">(362 B)</span></div>
+        <div class="file">📄 moon.svg <span class="file-size">(524 B)</span></div>
+        <div class="file">📄 networking.svg <span class="file-size">(476 B)</span></div>
+        <div class="file">📄 object.svg <span class="file-size">(437 B)</span></div>
+        <div class="file">📄 sun.svg <span class="file-size">(1.45 KB)</span></div>
+        <div class="file">📄 twitter.png <span class="file-size">(177.45 KB)</span></div>
+        <div class="file">📄 ui.svg <span class="file-size">(487 B)</span></div>
+        <div class="file">📄 workers.svg <span class="file-size">(406 B)</span></div>
+      </div>
+    </details>
+    <details class="directory">
+      <summary>📁 <strong>js</strong></summary>
+      <div class="directory-content">
+        <div class="file">📄 context-menu.js <span class="file-size">(2.85 KB)</span></div>
+        <div class="file">📄 example.js <span class="file-size">(7.64 KB)</span></div>
+        <div class="file">📄 index.js <span class="file-size">(117 B)</span></div>
+        <div class="file">📄 router.js <span class="file-size">(4.41 KB)</span></div>
+        <div class="file">📄 search.js <span class="file-size">(11.15 KB)</span></div>
+        <div class="file">📄 sidebar.js <span class="file-size">(2.76 KB)</span></div>
+      </div>
+    </details>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Auth</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 getDetailedAppUsage.md <span class="file-size">(923 B)</span></div>
+    <div class="file">📄 getMonthlyUsage.md <span class="file-size">(761 B)</span></div>
+    <div class="file">📄 getUser.md <span class="file-size">(626 B)</span></div>
+    <div class="file">📄 isSignedIn.md <span class="file-size">(602 B)</span></div>
+    <div class="file">📄 signIn.md <span class="file-size">(1.94 KB)</span></div>
+    <div class="file">📄 signOut.md <span class="file-size">(432 B)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Drivers</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 call.md <span class="file-size">(1.09 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>FS</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 copy.md <span class="file-size">(2.46 KB)</span></div>
+    <div class="file">📄 delete.md <span class="file-size">(2.16 KB)</span></div>
+    <div class="file">📄 getReadURL.md <span class="file-size">(684 B)</span></div>
+    <div class="file">📄 mkdir.md <span class="file-size">(2.78 KB)</span></div>
+    <div class="file">📄 move.md <span class="file-size">(3.40 KB)</span></div>
+    <div class="file">📄 read.md <span class="file-size">(1.51 KB)</span></div>
+    <div class="file">📄 readdir.md <span class="file-size">(1.47 KB)</span></div>
+    <div class="file">📄 rename.md <span class="file-size">(1.68 KB)</span></div>
+    <div class="file">📄 space.md <span class="file-size">(1.80 KB)</span></div>
+    <div class="file">📄 stat.md <span class="file-size">(1.95 KB)</span></div>
+    <div class="file">📄 upload.md <span class="file-size">(1.94 KB)</span></div>
+    <div class="file">📄 write.md <span class="file-size">(3.66 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Hosting</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 create.md <span class="file-size">(2.14 KB)</span></div>
+    <div class="file">📄 delete.md <span class="file-size">(1.72 KB)</span></div>
+    <div class="file">📄 get.md <span class="file-size">(1.45 KB)</span></div>
+    <div class="file">📄 list.md <span class="file-size">(1.53 KB)</span></div>
+    <div class="file">📄 update.md <span class="file-size">(1.95 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>KV</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 add.md <span class="file-size">(1.24 KB)</span></div>
+    <div class="file">📄 decr.md <span class="file-size">(1.87 KB)</span></div>
+    <div class="file">📄 del.md <span class="file-size">(1.19 KB)</span></div>
+    <div class="file">📄 expire.md <span class="file-size">(1.33 KB)</span></div>
+    <div class="file">📄 expireAt.md <span class="file-size">(1.38 KB)</span></div>
+    <div class="file">📄 flush.md <span class="file-size">(1.27 KB)</span></div>
+    <div class="file">📄 get.md <span class="file-size">(1.06 KB)</span></div>
+    <div class="file">📄 incr.md <span class="file-size">(1.92 KB)</span></div>
+    <div class="file">📄 list.md <span class="file-size">(3.64 KB)</span></div>
+    <div class="file">📄 MAX_KEY_SIZE.md <span class="file-size">(573 B)</span></div>
+    <div class="file">📄 MAX_VALUE_SIZE.md <span class="file-size">(587 B)</span></div>
+    <div class="file">📄 remove.md <span class="file-size">(1.04 KB)</span></div>
+    <div class="file">📄 set.md <span class="file-size">(1.43 KB)</span></div>
+    <div class="file">📄 update.md <span class="file-size">(1.35 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Networking</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 fetch.md <span class="file-size">(1.07 KB)</span></div>
+    <div class="file">📄 Socket.md <span class="file-size">(2.82 KB)</span></div>
+    <div class="file">📄 TLSSocket.md <span class="file-size">(3.16 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Objects</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 app.md <span class="file-size">(3.30 KB)</span></div>
+    <div class="file">📄 AppConnection.md <span class="file-size">(4.95 KB)</span></div>
+    <div class="file">📄 chatresponse.md <span class="file-size">(471 B)</span></div>
+    <div class="file">📄 chatresponsechunk.md <span class="file-size">(324 B)</span></div>
+    <div class="file">📄 createappresult.md <span class="file-size">(913 B)</span></div>
+    <div class="file">📄 detailedappusage.md <span class="file-size">(737 B)</span></div>
+    <div class="file">📄 fsitem.md <span class="file-size">(1.81 KB)</span></div>
+    <div class="file">📄 kvlistpage.md <span class="file-size">(605 B)</span></div>
+    <div class="file">📄 kvpair.md <span class="file-size">(285 B)</span></div>
+    <div class="file">📄 monthlyusage.md <span class="file-size">(1.13 KB)</span></div>
+    <div class="file">📄 signinresult.md <span class="file-size">(721 B)</span></div>
+    <div class="file">📄 spaceinfo.md <span class="file-size">(344 B)</span></div>
+    <div class="file">📄 speech2txtresult.md <span class="file-size">(503 B)</span></div>
+    <div class="file">📄 subdomain.md <span class="file-size">(605 B)</span></div>
+    <div class="file">📄 toolcall.md <span class="file-size">(489 B)</span></div>
+    <div class="file">📄 user.md <span class="file-size">(1.11 KB)</span></div>
+    <div class="file">📄 workerdeployment.md <span class="file-size">(465 B)</span></div>
+    <div class="file">📄 workerinfo.md <span class="file-size">(569 B)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Perms</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 request.md <span class="file-size">(1.43 KB)</span></div>
+    <div class="file">📄 requestEmail.md <span class="file-size">(1.47 KB)</span></div>
+    <div class="file">📄 requestManageApps.md <span class="file-size">(1.24 KB)</span></div>
+    <div class="file">📄 requestManageSubdomains.md <span class="file-size">(1.30 KB)</span></div>
+    <div class="file">📄 requestReadApps.md <span class="file-size">(1.25 KB)</span></div>
+    <div class="file">📄 requestReadDesktop.md <span class="file-size">(1.37 KB)</span></div>
+    <div class="file">📄 requestReadDocuments.md <span class="file-size">(1.41 KB)</span></div>
+    <div class="file">📄 requestReadPictures.md <span class="file-size">(1.39 KB)</span></div>
+    <div class="file">📄 requestReadSubdomains.md <span class="file-size">(1.25 KB)</span></div>
+    <div class="file">📄 requestReadVideos.md <span class="file-size">(1.36 KB)</span></div>
+    <div class="file">📄 requestWriteDesktop.md <span class="file-size">(1.38 KB)</span></div>
+    <div class="file">📄 requestWriteDocuments.md <span class="file-size">(1.43 KB)</span></div>
+    <div class="file">📄 requestWritePictures.md <span class="file-size">(1.41 KB)</span></div>
+    <div class="file">📄 requestWriteVideos.md <span class="file-size">(1.38 KB)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>playground</strong></summary>
+  <div class="directory-content">
+    <details class="directory">
+      <summary>📁 <strong>assets</strong></summary>
+      <div class="directory-content">
+        <details class="directory">
+          <summary>📁 <strong>css</strong></summary>
+          <div class="directory-content">
+            <div class="file">📄 style.css <span class="file-size">(6.42 KB)</span></div>
+          </div>
+        </details>
+        <details class="directory">
+          <summary>📁 <strong>js</strong></summary>
+          <div class="directory-content">
+            <div class="file">📄 app.js <span class="file-size">(14.08 KB)</span></div>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details class="directory">
+      <summary>📁 <strong>examples</strong></summary>
+      <div class="directory-content">
+        <div class="file">📄 ai-chat-claude-3-7-sonnet.html <span class="file-size">(424 B)</span></div>
+        <div class="file">📄 ai-chat-claude.html <span class="file-size">(434 B)</span></div>
+        <div class="file">📄 ai-chat-deepseek.html <span class="file-size">(895 B)</span></div>
+        <div class="file">📄 ai-chat-gemini.html <span class="file-size">(575 B)</span></div>
+        <div class="file">📄 ai-chat-openai-o3-mini.html <span class="file-size">(448 B)</span></div>
+        <div class="file">📄 ai-chat-stream.html <span class="file-size">(376 B)</span></div>
+        <div class="file">📄 ai-chatgpt.html <span class="file-size">(304 B)</span></div>
+        <div class="file">📄 ai-function-calling.html <span class="file-size">(1.85 KB)</span></div>
+        <div class="file">📄 ai-gpt-vision.html <span class="file-size">(465 B)</span></div>
+        <div class="file">📄 ai-img2txt.html <span class="file-size">(290 B)</span></div>
+        <div class="file">📄 ai-list-model-providers.html <span class="file-size">(283 B)</span></div>
+        <div class="file">📄 ai-list-models.html <span class="file-size">(302 B)</span></div>
+        <div class="file">📄 ai-resume-analyzer.html <span class="file-size">(5.23 KB)</span></div>
+        <div class="file">📄 ai-speech2speech-elevenlabs.html <span class="file-size">(907 B)</span></div>
+        <div class="file">📄 ai-speech2speech-file.html <span class="file-size">(856 B)</span></div>
+        <div class="file">📄 ai-speech2speech-url.html <span class="file-size">(333 B)</span></div>
+        <div class="file">📄 ai-speech2txt.html <span class="file-size">(300 B)</span></div>
+        <div class="file">📄 ai-txt2img-image-to-image.html <span class="file-size">(10.96 KB)</span></div>
+        <div class="file">📄 ai-txt2img-options.html <span class="file-size">(416 B)</span></div>
+        <div class="file">📄 ai-txt2img.html <span class="file-size">(476 B)</span></div>
+        <div class="file">📄 ai-txt2speech-elevenlabs.html <span class="file-size">(644 B)</span></div>
+        <div class="file">📄 ai-txt2speech-engines.html <span class="file-size">(2.55 KB)</span></div>
+        <div class="file">📄 ai-txt2speech-openai.html <span class="file-size">(2.78 KB)</span></div>
+        <div class="file">📄 ai-txt2speech-options.html <span class="file-size">(502 B)</span></div>
+        <div class="file">📄 ai-txt2speech.html <span class="file-size">(484 B)</span></div>
+        <div class="file">📄 ai-txt2vid-options.html <span class="file-size">(524 B)</span></div>
+        <div class="file">📄 ai-txt2vid.html <span class="file-size">(354 B)</span></div>
+        <div class="file">📄 ai-web-search.html <span class="file-size">(405 B)</span></div>
+        <div class="file">📄 ai-xai.html <span class="file-size">(367 B)</span></div>
+        <div class="file">📄 app-ai-chat.html <span class="file-size">(3.50 KB)</span></div>
+        <div class="file">📄 app-camera.html <span class="file-size">(3.29 KB)</span></div>
+        <div class="file">📄 app-create.html <span class="file-size">(543 B)</span></div>
+        <div class="file">📄 app-delete.html <span class="file-size">(867 B)</span></div>
+        <div class="file">📄 app-get.html <span class="file-size">(707 B)</span></div>
+        <div class="file">📄 app-list.html <span class="file-size">(995 B)</span></div>
+        <div class="file">📄 app-summarizer.html <span class="file-size">(3.02 KB)</span></div>
+        <div class="file">📄 app-todo.html <span class="file-size">(4.30 KB)</span></div>
+        <div class="file">📄 app-update.html <span class="file-size">(647 B)</span></div>
+        <div class="file">📄 auth-get-monthly-usage.html <span class="file-size">(252 B)</span></div>
+        <div class="file">📄 auth-get-user.html <span class="file-size">(219 B)</span></div>
+        <div class="file">📄 auth-is-signed-in.html <span class="file-size">(176 B)</span></div>
+        <div class="file">📄 auth-sign-in.html <span class="file-size">(653 B)</span></div>
+        <div class="file">📄 auth-sign-out.html <span class="file-size">(139 B)</span></div>
+        <div class="file">📄 fs-copy.html <span class="file-size">(815 B)</span></div>
+        <div class="file">📄 fs-delete-directory.html <span class="file-size">(485 B)</span></div>
+        <div class="file">📄 fs-delete.html <span class="file-size">(491 B)</span></div>
+        <div class="file">📄 fs-mkdir-create-missing-parents.html <span class="file-size">(411 B)</span></div>
+        <div class="file">📄 fs-mkdir-dedupe.html <span class="file-size">(586 B)</span></div>
+        <div class="file">📄 fs-mkdir.html <span class="file-size">(423 B)</span></div>
+        <div class="file">📄 fs-move-create-missing-parents.html <span class="file-size">(779 B)</span></div>
+        <div class="file">📄 fs-move.html <span class="file-size">(845 B)</span></div>
+        <div class="file">📄 fs-read.html <span class="file-size">(602 B)</span></div>
+        <div class="file">📄 fs-readdir.html <span class="file-size">(415 B)</span></div>
+        <div class="file">📄 fs-rename.html <span class="file-size">(485 B)</span></div>
+        <div class="file">📄 fs-stat.html <span class="file-size">(672 B)</span></div>
+        <div class="file">📄 fs-upload.html <span class="file-size">(509 B)</span></div>
+        <div class="file">📄 fs-write-create-missing-parents.html <span class="file-size">(428 B)</span></div>
+        <div class="file">📄 fs-write-dedupe.html <span class="file-size">(624 B)</span></div>
+        <div class="file">📄 fs-write-from-input.html <span class="file-size">(561 B)</span></div>
+        <div class="file">📄 fs-write.html <span class="file-size">(315 B)</span></div>
+        <div class="file">📄 hosting-create.html <span class="file-size">(790 B)</span></div>
+        <div class="file">📄 hosting-delete.html <span class="file-size">(911 B)</span></div>
+        <div class="file">📄 hosting-get.html <span class="file-size">(753 B)</span></div>
+        <div class="file">📄 hosting-list.html <span class="file-size">(866 B)</span></div>
+        <div class="file">📄 hosting-update.html <span class="file-size">(900 B)</span></div>
+        <div class="file">📄 intro-auth.html <span class="file-size">(539 B)</span></div>
+        <div class="file">📄 intro-chatgpt.html <span class="file-size">(304 B)</span></div>
+        <div class="file">📄 intro-fs-write.html <span class="file-size">(336 B)</span></div>
+        <div class="file">📄 intro-gpt-vision.html <span class="file-size">(465 B)</span></div>
+        <div class="file">📄 intro-hosting.html <span class="file-size">(787 B)</span></div>
+        <div class="file">📄 intro-kv-set.html <span class="file-size">(392 B)</span></div>
+        <div class="file">📄 kv-add.html <span class="file-size">(373 B)</span></div>
+        <div class="file">📄 kv-decr-nested.html <span class="file-size">(517 B)</span></div>
+        <div class="file">📄 kv-decr.html <span class="file-size">(230 B)</span></div>
+        <div class="file">📄 kv-del.html <span class="file-size">(620 B)</span></div>
+        <div class="file">📄 kv-expire.html <span class="file-size">(642 B)</span></div>
+        <div class="file">📄 kv-expireAt.html <span class="file-size">(663 B)</span></div>
+        <div class="file">📄 kv-flush.html <span class="file-size">(842 B)</span></div>
+        <div class="file">📄 kv-get.html <span class="file-size">(475 B)</span></div>
+        <div class="file">📄 kv-incr-nested.html <span class="file-size">(518 B)</span></div>
+        <div class="file">📄 kv-incr.html <span class="file-size">(230 B)</span></div>
+        <div class="file">📄 kv-list.html <span class="file-size">(1.13 KB)</span></div>
+        <div class="file">📄 kv-name.html <span class="file-size">(543 B)</span></div>
+        <div class="file">📄 kv-remove.html <span class="file-size">(390 B)</span></div>
+        <div class="file">📄 kv-set.html <span class="file-size">(259 B)</span></div>
+        <div class="file">📄 kv-update.html <span class="file-size">(480 B)</span></div>
+        <div class="file">📄 net-basic.html <span class="file-size">(648 B)</span></div>
+        <div class="file">📄 net-fetch.html <span class="file-size">(432 B)</span></div>
+        <div class="file">📄 net-tls.html <span class="file-size">(665 B)</span></div>
+        <div class="file">📄 perms-request-apps.html <span class="file-size">(682 B)</span></div>
+        <div class="file">📄 perms-request-desktop.html <span class="file-size">(532 B)</span></div>
+        <div class="file">📄 perms-request-documents.html <span class="file-size">(784 B)</span></div>
+        <div class="file">📄 perms-request-email.html <span class="file-size">(664 B)</span></div>
+        <div class="file">📄 perms-request-manage-apps.html <span class="file-size">(647 B)</span></div>
+        <div class="file">📄 perms-request-manage-subdomains.html <span class="file-size">(682 B)</span></div>
+        <div class="file">📄 perms-request-permission.html <span class="file-size">(683 B)</span></div>
+        <div class="file">📄 perms-request-read-apps.html <span class="file-size">(682 B)</span></div>
+        <div class="file">📄 perms-request-read-desktop.html <span class="file-size">(739 B)</span></div>
+        <div class="file">📄 perms-request-read-documents.html <span class="file-size">(770 B)</span></div>
+        <div class="file">📄 perms-request-read-pictures.html <span class="file-size">(758 B)</span></div>
+        <div class="file">📄 perms-request-read-subdomains.html <span class="file-size">(664 B)</span></div>
+        <div class="file">📄 perms-request-read-videos.html <span class="file-size">(734 B)</span></div>
+        <div class="file">📄 perms-request-write-desktop.html <span class="file-size">(750 B)</span></div>
+        <div class="file">📄 perms-request-write-documents.html <span class="file-size">(794 B)</span></div>
+        <div class="file">📄 perms-request-write-pictures.html <span class="file-size">(773 B)</span></div>
+        <div class="file">📄 perms-request-write-videos.html <span class="file-size">(749 B)</span></div>
+        <div class="file">📄 workers-create.html <span class="file-size">(1.16 KB)</span></div>
+        <div class="file">📄 workers-delete.html <span class="file-size">(1.02 KB)</span></div>
+        <div class="file">📄 workers-exec.html <span class="file-size">(20.91 KB)</span></div>
+        <div class="file">📄 workers-get.html <span class="file-size">(460 B)</span></div>
+        <div class="file">📄 workers-list.html <span class="file-size">(872 B)</span></div>
+        <div class="file">📄 workers-management.html <span class="file-size">(13.71 KB)</span></div>
+      </div>
+    </details>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>UI</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 alert.md <span class="file-size">(1.78 KB)</span></div>
+    <div class="file">📄 authenticateWithPuter.md <span class="file-size">(939 B)</span></div>
+    <div class="file">📄 contextMenu.md <span class="file-size">(8.77 KB)</span></div>
+    <div class="file">📄 createWindow.md <span class="file-size">(1.51 KB)</span></div>
+    <div class="file">📄 exit.md <span class="file-size">(825 B)</span></div>
+    <div class="file">📄 getLanguage.md <span class="file-size">(1.44 KB)</span></div>
+    <div class="file">📄 hideSpinner.md <span class="file-size">(503 B)</span></div>
+    <div class="file">📄 hideWindow.md <span class="file-size">(445 B)</span></div>
+    <div class="file">📄 launchApp.md <span class="file-size">(1.09 KB)</span></div>
+    <div class="file">📄 on.md <span class="file-size">(1.53 KB)</span></div>
+    <div class="file">📄 onItemsOpened.md <span class="file-size">(903 B)</span></div>
+    <div class="file">📄 onLaunchedWithItems.md <span class="file-size">(906 B)</span></div>
+    <div class="file">📄 onWindowClose.md <span class="file-size">(789 B)</span></div>
+    <div class="file">📄 parentApp.md <span class="file-size">(797 B)</span></div>
+    <div class="file">📄 prompt.md <span class="file-size">(1.05 KB)</span></div>
+    <div class="file">📄 setMenubar.md <span class="file-size">(1.91 KB)</span></div>
+    <div class="file">📄 setWindowHeight.md <span class="file-size">(649 B)</span></div>
+    <div class="file">📄 setWindowPosition.md <span class="file-size">(661 B)</span></div>
+    <div class="file">📄 setWindowSize.md <span class="file-size">(860 B)</span></div>
+    <div class="file">📄 setWindowTitle.md <span class="file-size">(483 B)</span></div>
+    <div class="file">📄 setWindowWidth.md <span class="file-size">(638 B)</span></div>
+    <div class="file">📄 setWindowX.md <span class="file-size">(491 B)</span></div>
+    <div class="file">📄 setWindowY.md <span class="file-size">(489 B)</span></div>
+    <div class="file">📄 showColorPicker.md <span class="file-size">(581 B)</span></div>
+    <div class="file">📄 showDirectoryPicker.md <span class="file-size">(1.87 KB)</span></div>
+    <div class="file">📄 showFontPicker.md <span class="file-size">(727 B)</span></div>
+    <div class="file">📄 showOpenFilePicker.md <span class="file-size">(1.71 KB)</span></div>
+    <div class="file">📄 showSaveFilePicker.md <span class="file-size">(1.17 KB)</span></div>
+    <div class="file">📄 showSpinner.md <span class="file-size">(679 B)</span></div>
+    <div class="file">📄 showWindow.md <span class="file-size">(445 B)</span></div>
+    <div class="file">📄 socialShare.md <span class="file-size">(884 B)</span></div>
+    <div class="file">📄 wasLaunchedWithItems.md <span class="file-size">(547 B)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Utils</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 appID.md <span class="file-size">(541 B)</span></div>
+    <div class="file">📄 env.md <span class="file-size">(970 B)</span></div>
+    <div class="file">📄 print.md <span class="file-size">(1.16 KB)</span></div>
+    <div class="file">📄 randName.md <span class="file-size">(883 B)</span></div>
+  </div>
+</details>
+<details class="directory">
+  <summary>📁 <strong>Workers</strong></summary>
+  <div class="directory-content">
+    <div class="file">📄 create.md <span class="file-size">(2.69 KB)</span></div>
+    <div class="file">📄 delete.md <span class="file-size">(1.54 KB)</span></div>
+    <div class="file">📄 exec.md <span class="file-size">(1.30 KB)</span></div>
+    <div class="file">📄 get.md <span class="file-size">(1.00 KB)</span></div>
+    <div class="file">📄 list.md <span class="file-size">(884 B)</span></div>
+    <div class="file">📄 router.md <span class="file-size">(12.43 KB)</span></div>
+  </div>
+</details>
+<div class="file">📄 AI.md <span class="file-size">(8.15 KB)</span></div>
+<div class="file">📄 Apps.md <span class="file-size">(6.17 KB)</span></div>
+<div class="file">📄 Auth.md <span class="file-size">(3.14 KB)</span></div>
+<div class="file">📄 Drivers.md <span class="file-size">(338 B)</span></div>
+<div class="file">📄 examples.js <span class="file-size">(30.39 KB)</span></div>
+<div class="file">📄 examples.md <span class="file-size">(3.30 KB)</span></div>
+<div class="file">📄 frameworks.md <span class="file-size">(8.07 KB)</span></div>
+<div class="file">📄 FS.md <span class="file-size">(10.13 KB)</span></div>
+<div class="file">📄 getting-started.md <span class="file-size">(12.16 KB)</span></div>
+<div class="file">📄 Hosting.md <span class="file-size">(6.81 KB)</span></div>
+<div class="file">📄 index.md <span class="file-size">(12.28 KB)</span></div>
+<div class="file">📄 KV.md <span class="file-size">(7.41 KB)</span></div>
+<div class="file">📄 menu.js <span class="file-size">(2.91 KB)</span></div>
+<div class="file">📄 Networking.md <span class="file-size">(3.75 KB)</span></div>
+<div class="file">📄 Objects.md <span class="file-size">(1.44 KB)</span></div>
+<div class="file">📄 Perms.md <span class="file-size">(5.91 KB)</span></div>
+<div class="file">📄 playground.js <span class="file-size">(10.60 KB)</span></div>
+<div class="file">📄 printdir.sh <span class="file-size">(536 B)</span></div>
+<div class="file">📄 redirects.js <span class="file-size">(78 B)</span></div>
+<div class="file">📄 robots.txt <span class="file-size">(33 B)</span></div>
+<div class="file">📄 security.md <span class="file-size">(2.83 KB)</span></div>
+<div class="file">📄 sidebar.js <span class="file-size">(48.43 KB)</span></div>
+<div class="file">📄 supported-platforms.md <span class="file-size">(4.28 KB)</span></div>
+<div class="file">📄 UI.md <span class="file-size">(2.60 KB)</span></div>
+<div class="file">📄 user-pays-model.md <span class="file-size">(2.97 KB)</span></div>
+<div class="file">📄 Utils.md <span class="file-size">(616 B)</span></div>
+<div class="file">📄 Workers.md <span class="file-size">(4.17 KB)</span></div>
+
+            </div>
+        </div>
+        
+        <footer>
+            <p>Generated on 2/2/2026, 3:34:17 PM</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/badbsallyy/docs" target="_blank" style="color: #667eea; text-decoration: none;">
+                    View on GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // Calculate statistics
+        function calculateStats() {
+            const files = document.querySelectorAll('.file').length;
+            const dirs = document.querySelectorAll('.directory').length;
+            
+            // Extract all file sizes and sum them
+            const fileSizes = Array.from(document.querySelectorAll('.file-size')).map(el => {
+                const text = el.textContent;
+                const match = text.match(/\(([0-9.]+)\s*(B|KB|MB)\)/);
+                if (match) {
+                    const value = parseFloat(match[1]);
+                    const unit = match[2];
+                    if (unit === 'KB') return value * 1024;
+                    if (unit === 'MB') return value * 1024 * 1024;
+                    return value;
+                }
+                return 0;
+            });
+            
+            const totalSize = fileSizes.reduce((a, b) => a + b, 0);
+            
+            // Update UI
+            document.getElementById('total-files').textContent = files;
+            document.getElementById('total-dirs').textContent = dirs;
+            
+            // Format total size
+            let sizeText;
+            if (totalSize < 1024) {
+                sizeText = totalSize.toFixed(0) + ' B';
+            } else if (totalSize < 1024 * 1024) {
+                sizeText = (totalSize / 1024).toFixed(2) + ' KB';
+            } else {
+                sizeText = (totalSize / (1024 * 1024)).toFixed(2) + ' MB';
+            }
+            document.getElementById('total-size').textContent = sizeText;
+        }
+        
+        // Run on page load
+        calculateStats();
+        
+        // Open all directories by default
+        document.querySelectorAll('details').forEach(detail => {
+            detail.open = true;
+        });
+    </script>
+</body>
+</html>

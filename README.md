@@ -49,6 +49,20 @@ npm run dev
 
 <br/>
 
+### 📁 HTML File Directory
+
+Generate a simple HTML file directory from the `src` folder structure:
+
+```bash
+node generate-directory.js
+```
+
+This will create an interactive HTML page at `directory/index.html` that displays the complete file structure with statistics.
+
+The HTML directory is automatically deployed to GitHub Pages.
+
+<br/>
+
 ## Support
 
 Connect with the maintainers and community through these channels:
